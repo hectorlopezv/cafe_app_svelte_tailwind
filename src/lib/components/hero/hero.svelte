@@ -193,7 +193,7 @@
 		<div
 			class="px-10 lg:px-[5.813rem] pt-[5.85rem] flex flex-wrap gap-x-4 gap-y-10 relative items-center justify-center"
 		>
-			<Card.Root class="bg-white w-full md:max-w-[23.75rem] min-h-[40.433rem]">
+			<Card.Root class="bg-white w-full max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class="flex items-center justify-center -translate-y-11 hover:scale-105">
 						<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2 cursor-pointer">
@@ -205,7 +205,7 @@
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-sm text-justify">
 						Somos un ministerio de negocios y misión encargado de la comercialización de <span
 							class="text-[#F9C06A] font-medium">café</span
 						>
@@ -230,7 +230,7 @@
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-sm text-justify">
 						Consolidarnos como un <span class="text-[#F9C06A] font-medium">ministerio</span> líderes
 						en el mercado regional, incrementar la participación en el mercado nacional e
 						incursionar en el mercado internacional, asegurando la
@@ -253,7 +253,7 @@
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-sm text-justify">
 						Desplegamos junto a nuestros misioneros el producto a diferentes ciudades para
 						conocimiento de la comunidad dentro y fuera del país.
 					</p>
@@ -300,7 +300,7 @@
 						</Card.Description>
 					</Card.Header>
 					<Card.Content class="">
-						<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+						<p class="leading-8 text-slate-700 text-sm text-justify">
 							Ser el ministerio en Colombia más reconocido por trasformar vidas en el mundo, por su
 							Calidad, impacto social y sabor.
 						</p>
@@ -321,7 +321,7 @@
 						</Card.Description>
 					</Card.Header>
 					<Card.Content class="">
-						<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+						<p class="leading-8 text-slate-700 text-sm text-justify">
 							Java, Bourbon Pink, Geisha, Pacamara, Caturra, Tabi, Castillo, Supremo y Colombia
 						</p>
 					</Card.Content>
