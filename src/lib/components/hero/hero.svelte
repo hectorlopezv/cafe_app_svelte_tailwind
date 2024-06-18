@@ -1,13 +1,10 @@
 <script>
 	import * as Card from '$lib/components/ui/card';
+	import logo100 from '$lib/images/100.svg';
 	import bg2 from '$lib/images/bg_2.svg';
 	import card1 from '$lib/images/card_1.svg';
-
 	import card2 from '$lib/images/card_2.svg';
-
 	import card3 from '$lib/images/card_3.svg';
-
-	import logo100 from '$lib/images/100.svg';
 	import coffeCup from '$lib/images/coffe_cup.svg';
 	import heroImage from '$lib/images/coffee_image.jpg';
 	import colombia from '$lib/images/colombia.svg';
@@ -20,9 +17,9 @@
 	import splashLeft from '$lib/images/splash_l.svg';
 	import splashRight from '$lib/images/splash_r.svg';
 	import location from '$lib/images/ubi.svg';
+	const SHEET_SIDES = ['Inicio', 'Sobre Nosotros', 'Proposito', 'Contacto'];
 
 	function contactHandler() {}
-
 </script>
 
 <div class="overflow-hidden">
@@ -34,26 +31,28 @@
 				alt="hero"
 			/>
 		</div>
-		<header class="pt-4 z-1 px-16">
-			<div class="flex items-center">
-				<div class="w-24 h-16">
+		<header class="pt-4 z-1 md:px-16">
+			<div class="flex flex-col md:flex-row items-center">
+				<div class=" w-16 h-11 md:w-24 md:h-16">
 					<img class="object-cover object-center" src={logo} alt="cafe logo" />
 				</div>
+
 				<ul
-					class="flex justify-between items-center ml-auto gap-x-9 text-white text-base
+					class="flex justify-between items-center md:ml-auto gap-x-9 text-white text-base
                 font-medium cursor-pointer transition-transform duration-300 ease-in-out
+				pt-5
                 "
 				>
-					<li class="hover:scale-105">
+					<li class="hover:scale-105 text-sm">
 						<a href="#start">Inicio</a>
 					</li>
-					<li class="hover:scale-105">
+					<li class="hover:scale-105 text-sm">
 						<a href="#about_us">Sobre Nosotros</a>
 					</li>
-					<li class="hover:scale-105">
+					<li class="hover:scale-105 text-sm">
 						<a href="#purpose">Proposito</a>
 					</li>
-					<li class="hover:scale-105">
+					<li class="hover:scale-105 text-sm">
 						<a href="">Contacto</a>
 					</li>
 				</ul>
@@ -61,11 +60,11 @@
 		</header>
 		<div class="px-16">
 			<div class="pt-24 max-w-[34.188rem]">
-				<div class="w-[22.875rem] h-60">
+				<div class="w-[14rem] md:w-[22.875rem] h-60">
 					<img class="object-cover object-center" src={goldLogo} alt="cafe logo" />
 				</div>
 
-				<div class="pt-24">
+				<div class="md:pt-24">
 					<button
 						on:click={contactHandler}
 						class="rounded-2xl bg-[var(--Yellow,_#F9C06A)]
@@ -78,7 +77,7 @@
                     text-slate-800
                     ">Contacto</button
 					>
-					<p class="text-white leading-8 text-xl pt-4">
+					<p class="text-[19px] md:text-xl text-white leading-8 pt-8 italic">
 						“Tu momento perfecto comienza con una taza de nuestro café excepcional.”
 					</p>
 				</div>
@@ -86,67 +85,87 @@
 		</div>
 	</div>
 
-	<div class="relative px-[5.813rem] pt-[5.813rem]">
+	<div class="relative px-[3.5rem] md:px-[5.813rem] pt-[5.813rem]">
 		<div class="flex">
 			<h2
-				class="text-[3.375rem] max-w-[43.75rem]
+				class="text-left text-[2.5rem] lg:text-[3.375rem] max-w-[50.75rem] md:max-w-[79rem]
             text-[#603809] font-bold
             "
 			>
 				Cómo preparar un buen café
 			</h2>
 			<img
-				class="flex-1 max-h-[22.5rem] max-w-[32.813rem] absolute top-9 right-[5.813rem] bg-clip-content z-[-1]"
+				class="flex-1 hidden xl:block xl:h-[8rem] xl:-w-[32.813rem] absolute top:5% right-[20%] bg-clip-content z-[-1]"
 				src={coffeCup}
 				alt="cafe cup"
 			/>
 		</div>
-		<div>
-			<div class="flex gap-x-6 items-center pt-9 text-[#707070] text-xl">
+		<div class="flex flex-col justify-center items-start 2xl:justify-center md:pt-2 md:gap-y-2">
+			<div
+				class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-5 py-3 text-[#1E1E1E] text-base font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+					font-bold shadow-md flex items-center justify-center"
 				>
 					1
 				</div>
-				<p class="line-clamp-2 max-w-[43.063rem] leading-8 text-left">
+				<p
+					class="text-xs md:text-base line-clamp-6 leading-8 text-left max-w-[43.063rem] lg:max-w-[79rem]"
+				>
 					Coloca el filtro de papel V60 en el cono, enjuágalo con agua caliente para quitarle el
 					sabor a papel.
 				</p>
 			</div>
 
-			<div class="flex gap-x-6 items-center pt-5 text-[#707070] text-xl">
+			<div
+			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-5 py-3 text-[#1E1E1E] text-base font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+				font-bold shadow-md flex items-center justify-center"
 				>
 					2
 				</div>
-				<p class="max-w-[45rem] leading-8 text-left">
+				<p
+					class="text-xs md:text-base line-clamp-6 leading-8 text-left max-w-[43.063rem] lg:max-w-[79rem]"
+				>
 					Hierve el agua a una temperatura ideal de 88-92°. Pon en marcha el temporizador y vierte
 					lentamente unos 50 gramos de agua encima del café molido. Asegúrate de que todo el café
 					quede bien mojado, puedes usar una cuchara para mezclar.
 				</p>
 			</div>
 
-			<div class="flex gap-x-6 items-center pt-5 text-[#707070] text-xl">
+			<div
+			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-5 py-3 text-[#1E1E1E] text-base font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+				font-bold shadow-md flex items-center justify-center"
 				>
 					3
 				</div>
-				<p class="max-w-[57rem] leading-8 text-left">
+				<p
+					class="text-xs md:text-base line-clamp-6 leading-8 text-left max-w-[43.063rem] lg:max-w-[79rem]"
+				>
 					A los 30 segundos, empieza a verter el resto del agua caliente hasta llegar a 250GR con un
 					movimiento constante y controlado. Asegúrate de no verter nunca directamente en los bordes
 					exteriores del papel.
 				</p>
 			</div>
 
-			<div class="flex gap-x-6 items-center pt-5 text-[#707070] text-xl">
+			<div
+			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-5 py-3 text-[#1E1E1E] text-base font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+				font-bold shadow-md flex items-center justify-center"
 				>
 					4
 				</div>
-				<p class="max-w-[60rem] leading-8 text-left">
+				<p
+					class="text-xs md:text-base line-clamp-6 leading-8 text-left max-w-[43.063rem] lg:max-w-[79rem]"
+				>
 					Al final del vertido, gira delicadamente el cono un par de veces, para que ninguno de los
 					granos de café se quede pegado al papel.
 				</p>
@@ -157,9 +176,9 @@
 	<div class="relative">
 		<img class="z-[1-] h-[11rem] w-[17rem] scale-x-[-1] absolute" src={splashLeft} alt="splash_l" />
 	</div>
-	<div id="about_us" class="pt-[7.5rem]">
+	<div id="about_us" class=" pt-[3rem] md:pt-[7.5rem]">
 		<div class="w-full flex items-center justify-center">
-			<h2 class="text-[3.375rem] text-[#603809] font-bold">Sobre nosotros</h2>
+			<h2 class="text-[2.5rem] lg:text-[3.375rem]  text-[#603809] font-bold">Sobre nosotros</h2>
 		</div>
 
 		<div
@@ -168,7 +187,7 @@
 			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class="flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-base rounded-full leading-8 px-4 py-1">
+						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1">
 							Quienes Somos
 						</p>
 					</div>
@@ -177,7 +196,7 @@
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-8 text-slate-700 text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
 						Somos un ministerio de negocios y misión encargado de la comercialización de <span
 							class="text-[#F9C06A] font-medium">café</span
 						>
@@ -193,14 +212,16 @@
 			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class="flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-base rounded-full leading-8 px-4 py-1">Misión</p>
+						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1">
+							Misión
+						</p>
 					</div>
 					<Card.Description>
 						<img class="rounded-sm" src={card2} alt="card 1" />
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-8 text-slate-700 text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
 						Consolidarnos como un <span class="text-[#F9C06A] font-medium">ministerio</span> líderes
 						en el mercado regional, incrementar la participación en el mercado nacional e
 						incursionar en el mercado internacional, asegurando la
@@ -214,14 +235,16 @@
 			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class="flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-base rounded-full leading-8 px-4 py-1">Envíos</p>
+						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1">
+							Envíos
+						</p>
 					</div>
 					<Card.Description>
 						<img class="rounded-sm" src={card3} alt="card 1" />
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="">
-					<p class="leading-6 text-slate-700 text-sm text-justify">
+					<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
 						Desplegamos junto a nuestros misioneros el producto a diferentes ciudades para
 						conocimiento de la comunidad dentro y fuera del país.
 					</p>
@@ -241,15 +264,15 @@
 		</div>
 	</div>
 
-	<div id="purpose" class="pt-[7.5rem] max-h-[868px] min-h-[728px]">
+	<div id="purpose" class="pt-[7.5rem] min-h-fit md:min-h-[728px]">
 		<img
-			class="z-[-1] absolute bg-no-repeat object-cover w-full h-[33rem]"
+			class="z-[-1] absolute bg-no-repeat object-cover w-full h-[10rem] md:h-[33rem]"
 			src={bg2}
 			alt="background2"
 		/>
 
 		<div class="flex items-center justify-center pt-[3.313rem]">
-			<h2 class="text-white text-5xl font-bold">Proposito</h2>
+			<h2 class="text-white text-[2.5rem] lg:text-[3.375rem] font-bold">Proposito</h2>
 		</div>
 
 		<div>
@@ -268,13 +291,14 @@
 						</Card.Description>
 					</Card.Header>
 					<Card.Content class="">
-						<p class="leading-8 text-slate-700 text-sm text-justify">
-                            Ser el ministerio en Colombia más reconocido por trasformar vidas en el mundo, por su Calidad, impacto social y sabor.
+						<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+							Ser el ministerio en Colombia más reconocido por trasformar vidas en el mundo, por su
+							Calidad, impacto social y sabor.
 						</p>
 					</Card.Content>
 				</Card.Root>
 				<div class="px-10">
-					<img class="w-60 h-full pt-60" src={cup} alt="coffe cup" />
+					<img class=" w-32 md:w-60 h-full md:pt-60" src={cup} alt="coffe cup" />
 				</div>
 				<Card.Root class="bg-white max-w-[23.75rem] min-h-[31.875rem]">
 					<Card.Header>
@@ -288,8 +312,8 @@
 						</Card.Description>
 					</Card.Header>
 					<Card.Content class="">
-						<p class="leading-8 text-slate-700 text-sm text-justify">
-                            Java, Bourbon Pink, Geisha, Pacamara, Caturra, Tabi, Castillo, Supremo y Colombia
+						<p class="leading-8 text-slate-700 text-xs md:text-sm text-justify">
+							Java, Bourbon Pink, Geisha, Pacamara, Caturra, Tabi, Castillo, Supremo y Colombia
 						</p>
 					</Card.Content>
 				</Card.Root>
@@ -308,47 +332,45 @@
 		</div>
 	</div>
 
-    <footer class="bg-black h-[18rem] px-[5.813rem] mt-36">
+	<footer class="bg-black h-[18rem] px-[5.813rem] mt-36 grid grid-cols-3">
+		
+			<div class="h-8 w-12 self-center">
+				<img class="object-cover object-center" src={goldLogo} alt="cafe logo" />
+			</div>
 
-        <div class="flex justify-between items-center pt-4">
-            <div class="h-8 w-12 self-end" >
-                <img class="object-cover object-center" src={goldLogo} alt="cafe logo" />
-            </div>
+			<div class="flex flex-col gap-y-8 gap-x-2">
+				<div class="w-full items-center justify-center pt-[4rem]">
+					<div class="flex gap-x-2 items-center justify-center">
+						<img class="h-12 w-12" src={logo100} alt="logo 100 percent" />
+						<img class="h-12 w-12" src={colombia} alt="colombia logo" />
+					</div>
+				</div>
+				<ul class="flex gap-x-3">
+					<li>
+						<a href="https://wa.me/573232314602?text=I'm%20interested%20in%20Cafe%20Plus" target="_blank" title="Cafe Plus">
+							<img class="h-8 w-8" src={social1} alt="WhatsApp" />
+						</a>
+						
+					</li>
+					<li>
+						<a href="https://www.instagram.com/centrointegralcafeplus?igsh=MXB3emgyeDJhZnNncQ==" target="_blank">
+							<img class="h-8 w-8" src={social3} alt="instagram" />
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img class="h-8 w-8" src={social2} alt="facebook" />
+						</a>
+					</li>
+				</ul>
+			</div>
 
-            <div class="flex flex-col gap-y-8 gap-x-2">
-                <div class="w-full items-center justify-center pt-[4rem]">
-                    <div class="flex gap-x-2 items-center justify-center">
-                        <img class="h-12 w-12" src={logo100} alt="logo 100 percent"/>
-                        <img class="h-12 w-12" src={colombia} alt="colombia logo"/>
-                    </div>
-                </div>
-                <ul class="flex gap-x-3">
-                    <li>
-                        <a href="">
-                            <img class="h-8 w-8"  src={social1} alt="wassap">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="h-8 w-8"  src={social2} alt="instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="h-8 w-8"  src={social3} alt="facebook">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        
-            <div class="flex items-end gap-x-2 self-end">
-                <div class="h-8 w-8">
-                    <img class="object-cover object-center" src={location} alt="cafe logo" />
-                </div>
-                <p class="font-semibold leading-8 text-white text-xs translate-y-2">Bogotá, Colombia</p>
-            </div>
-
-        </div>
-
-    </footer>
+			<div class="flex items-end gap-x-2 self-center">
+				<div class="h-8 w-8">
+					<img class="object-cover object-center" src={location} alt="cafe logo" />
+				</div>
+				<p class="font-semibold leading-8 text-white text-xs translate-y-2">Bogotá, Colombia</p>
+			</div>
+		
+	</footer>
 </div>
