@@ -32,7 +32,7 @@
 				alt="hero"
 			/>
 		</div>
-		<header class="pt-4 z-1 md:px-16">
+		<header class="pt-4 z-1   lg:px-16">
 			<div class="flex flex-col md:flex-row items-center">
 				<div class=" w-16 h-11 md:w-24 md:h-16">
 					<img class="object-cover object-center" src={logo} alt="cafe logo" />
@@ -59,7 +59,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="px-16">
+		<div class=" px-10 lg:px-16">
 			<div class="pt-24 max-w-[34.188rem]">
 				<div class="w-[14rem] md:w-[22.875rem] h-60">
 					<img class="object-cover object-center" src={goldLogo} alt="cafe logo" />
@@ -86,7 +86,7 @@
 		</div>
 	</div>
 
-	<div class="relative px-[3.5rem] md:px-[5.813rem] pt-[5.813rem]">
+	<div class="relative px-[3.5rem] md:px-[5.813rem] pt-[4.5rem]">
 		<div class="flex">
 			<h2
 				class="text-left text-[2.5rem] lg:text-[3.375rem] max-w-[50.75rem] md:max-w-[79rem]
@@ -103,11 +103,13 @@
 		</div>
 		<div class="flex flex-col justify-center gap-y-2 items-start 2xl:justify-center md:pt-2 md:gap-y-2">
 			<div
-				class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+				class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center justify-center pt-12 md:pt-5 text-[#707070] text-xl"
 			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
-					font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-4 py-2 xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+					font-bold shadow-md flex items-center justify-center
+					text-base md:text-xs
+					"
 				>
 					1
 				</div>
@@ -120,12 +122,14 @@
 			</div>
 
 			<div
-			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center justify-center pt-12 md:pt-5 text-[#707070] text-xl"
+		>
+			<div
+				class="bg-[#F9C06A] rounded-full px-4 py-2 xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+				font-bold shadow-md flex items-center justify-center
+				text-base md:text-xs
+				"
 			>
-				<div
-					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
-				font-bold shadow-md flex items-center justify-center"
-				>
 					2
 				</div>
 				<p
@@ -138,11 +142,13 @@
 			</div>
 
 			<div
-			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+				class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center justify-center pt-12 md:pt-5 text-[#707070] text-xl"
 			>
 				<div
-					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
-				font-bold shadow-md flex items-center justify-center"
+					class="bg-[#F9C06A] rounded-full px-4 py-2 xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+					font-bold shadow-md flex items-center justify-center
+					text-base md:text-xs
+					"
 				>
 					3
 				</div>
@@ -156,12 +162,14 @@
 			</div>
 
 			<div
-			class="flex flex-col gap-y-4 sm:flex-row gap-x-6 items-center pt-5 text-[#707070] text-xl"
+			class="flex flex-col gap-y-4 md:gap-y-6 sm:flex-row gap-x-6 items-center justify-center pt-12 md:pt-5 text-[#707070] text-xl"
+		>
+			<div
+				class="bg-[#F9C06A] rounded-full px-4 py-2 xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
+				font-bold shadow-md flex items-center justify-center
+				text-base md:text-xs
+				"
 			>
-				<div
-					class="bg-[#F9C06A] rounded-full px-3 py-2 text-xs xl:text-base xl:px-5 xl:py-3 text-[#1E1E1E]
-				font-bold shadow-md flex items-center justify-center"
-				>
 					4
 				</div>
 				<p
@@ -175,7 +183,7 @@
 	</div>
 
 	<div class="relative">
-		<img class="z-[1-] h-[11rem] w-[17rem] scale-x-[-1] absolute" src={splashLeft} alt="splash_l" />
+		<img class="z-[1-] h-[4rem] lg:h-[11rem] lg:w-[17rem] scale-x-[-1] absolute" src={splashLeft} alt="splash_l" />
 	</div>
 	<div id="about_us" class=" pt-[3rem] md:pt-[7.5rem]">
 		<div class="w-full flex items-center justify-center">
@@ -183,12 +191,12 @@
 		</div>
 
 		<div
-			class="px-[5.813rem] pt-[5.85rem] flex flex-wrap gap-x-4 gap-y-10 relative items-center justify-center"
+			class="px-10 lg:px-[5.813rem] pt-[5.85rem] flex flex-wrap gap-x-4 gap-y-10 relative items-center justify-center"
 		>
-			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
+			<Card.Root class="bg-white w-full md:max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class="flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1 cursor-pointer">
+						<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2 cursor-pointer">
 							Quienes Somos
 						</p>
 					</div>
@@ -213,7 +221,7 @@
 			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class=" cursor-pointer flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1">
+						<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2">
 							Misión
 						</p>
 					</div>
@@ -236,7 +244,7 @@
 			<Card.Root class="bg-white max-w-[23.75rem] min-h-[40.433rem]">
 				<Card.Header>
 					<div class=" cursor-pointer flex items-center justify-center -translate-y-11 hover:scale-105">
-						<p class="bg-[#F9C06A] w-fit text-sm md:text-base rounded-full leading-8 px-4 py-1">
+						<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2">
 							Envíos
 						</p>
 					</div>
@@ -253,7 +261,7 @@
 			</Card.Root>
 
 			<img
-				class="z-[1-] h-[11rem] w-[17rem] absolute -bottom-14 right-0"
+				class="z-[1-] h-[4rem] lg:h-[11rem] lg:w-[17rem] absolute -bottom-14 right-0"
 				src={splashLeft}
 				alt="splash_l"
 			/>
@@ -278,12 +286,12 @@
 
 		<div>
 			<div
-				class="px-[2.5rem] pt-[3rem] flex flex-col lg:flex-row lg:flex-wrap gap-x-4 gap-y-10 relative items-center justify-center"
+				class="px-[2.5rem]  pt-[8rem]  lg:pt-[3rem] flex flex-col lg:flex-row lg:flex-wrap gap-x-4 gap-y-10 relative items-center justify-center"
 			>
 				<Card.Root class="bg-white max-w-[23.75rem] min-h-[31.875rem]">
 					<Card.Header>
 						<div class=" cursor-pointer flex items-center justify-center -translate-y-11 hover:scale-105">
-							<p class="bg-[#F9C06A] w-fit text-base rounded-full leading-8 px-4 py-1">
+							<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2">
 								Quienes Somos
 							</p>
 						</div>
@@ -304,7 +312,7 @@
 				<Card.Root class="bg-white max-w-[23.75rem] min-h-[31.875rem]">
 					<Card.Header>
 						<div class=" cursor-pointer flex items-center justify-center -translate-y-11 hover:scale-105">
-							<p class="bg-[#F9C06A] w-fit text-base rounded-full leading-8 px-4 py-1">
+							<p class="bg-[#F9C06A] w-fit text-xs md:text-base rounded-full leading-8 px-4 py-2">
 								Variedades de Café
 							</p>
 						</div>
@@ -320,7 +328,7 @@
 				</Card.Root>
 
 				<img
-					class="z-[1-] h-[11rem] w-[17rem] absolute -bottom-14 right-0"
+					class="z-[1-] h-[4rem] lg:h-[11rem] lg:w-[17rem] absolute -bottom-14 right-0"
 					src={splashLeft}
 					alt="splash_l"
 				/>
@@ -333,40 +341,40 @@
 		</div>
 	</div>
 
-	<footer class="bg-black h-[18rem] px-[5.813rem] mt-36 grid grid-cols-3 justify-center place-items-center">
+	<footer class="bg-black h-[18rem] px-5 mt-36 grid grid-cols-3 justify-center place-items-center">
 		
-			<div class="h-8 w-12 self-center">
+			<div class="h-8 w-12 md:w-20 self-center">
 				<img class="object-cover object-center" src={goldLogo} alt="cafe logo" />
 			</div>
 
 			<div class="flex flex-col gap-y-8 gap-x-2">
 				<div class="w-full items-center justify-center pt-[4rem]">
 					<div class="flex gap-x-2 items-center justify-center">
-						<img class="h-12 w-12" src={logo100} alt="logo 100 percent" />
-						<img class="h-12 w-12" src={colombia} alt="colombia logo" />
+						<img class="h-12 w-12 md:w-14 md:h-14" src={logo100} alt="logo 100 percent" />
+						<img class="h-12 w-12 md:w-14 md:h-14" src={colombia} alt="colombia logo" />
 					</div>
 				</div>
 				<ul class="flex gap-x-3 items-center justify-center">
 					<li>
 						<a href="https://wa.me/573232314602?text=I'm%20interested%20in%20Cafe%20Plus" target="_blank" title="Cafe Plus">
-							<img class="h-8 w-8" src={social1} alt="WhatsApp" />
+							<img class="h-8 w-8 md:h-10 md:w-10" src={social1} alt="WhatsApp" />
 						</a>
 						
 					</li>
 					<li>
 						<a href="https://www.instagram.com/centrointegralcafeplus?igsh=MXB3emgyeDJhZnNncQ==" target="_blank">
-							<img class="h-8 w-8" src={social3} alt="instagram" />
+							<img class="h-8 w-8 md:h-10 md:w-10" src={social3} alt="instagram" />
 						</a>
 					</li>
 
 				</ul>
 			</div>
 
-			<div class="flex items-end gap-x-2 self-center">
-				<div class="h-8 w-8">
+			<div class="flex items-center justify-center gap-x-2">
+				<div class="h-3 w-8">
 					<img class="object-cover object-center" src={location} alt="cafe logo" />
 				</div>
-				<p class="font-semibold leading-8 text-white text-xs translate-y-2">Bogotá, Colombia</p>
+				<p class="font-semibold leading-8 text-white text-xs md:text-base translate-y-2 min-w-fit">Bogotá, Colombia</p>
 			</div>
 		
 	</footer>
