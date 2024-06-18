@@ -32,7 +32,7 @@
 				alt="hero"
 			/>
 		</div>
-		<header class="pt-4 z-1   lg:px-16">
+		<header class="pt-4 z-1 md:px-8  lg:px-16">
 			<div class="flex flex-col md:flex-row items-center">
 				<div class=" w-16 h-11 md:w-24 md:h-16">
 					<img class="object-cover object-center" src={logo} alt="cafe logo" />
